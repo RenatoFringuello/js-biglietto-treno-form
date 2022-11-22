@@ -41,12 +41,10 @@ sendBtn.addEventListener('click', function(){
         // output finale
         client.innerHTML = `${nome.value} ${surname.value}, ${age.value}y/o`;
         initialPrice.innerHTML = `\$${initialP.toFixed(2)}`;
-        minorDiscount.innerHTML = `- \$${discount.minor.toFixed(2)}`;
-        overDiscount.innerHTML = `- \$${discount.over.toFixed(2)}`;
+        minorDiscount.innerHTML = `- \$${(initialP * discount.minor).toFixed(2)}`;
+        overDiscount.innerHTML = `- \$${(initialP * discount.over).toFixed(2)}`;
         finalPrice.innerHTML = `\$${finalP.toFixed(2)}`;
         console.log(result.toFixed(2));
 
-        document.h
-         = '#price';
     }
 });
