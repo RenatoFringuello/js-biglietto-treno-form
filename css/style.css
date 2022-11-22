@@ -4,12 +4,18 @@ body{
     font-family: 'Nixie One';
     font-family: 'Smokum';
 }
-.big-font{
-    font-family: 'Rye';
+
+/* header */
+header{
+    background: linear-gradient(#0008, #0000);
 }
 
+/* main */
 main > section:nth-child(even){
     background-color: antiquewhite;
+}
+main > section:nth-child(odd){
+    background-color: black;
 }
 
 #jumbotron img{
@@ -27,13 +33,24 @@ main > section:nth-child(even){
 
 
 /* my-classes */
-.my-jumbo-text{
+.big-font{
+    font-family: 'Rye';
+}
+.my-jumbo-p{
     top: 50%;
     left: 50%;
+}
+.my-jumbo-title{
     font-size: 2rem;
+}
+.my-jumbo-text{
+    font-size: 1.5rem;
 }
 .my-btn-primary{
     background-color: red;
+}
+.my-btn-primary:hover{
+    background-color: rgb(255, 51, 51);
 }
 
 /* sheriff-line */
@@ -50,6 +67,9 @@ main > section:nth-child(even){
         width: 100%;
     }
 
+    .my-jumbo-title{
+        font-size: 6rem;
+    }
     .my-jumbo-text{
         font-size: 3rem;
     }
