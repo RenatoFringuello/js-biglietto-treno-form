@@ -9,6 +9,9 @@ body{
 header{
     background: linear-gradient(#0008, #0000);
 }
+header img{
+    height: 5rem;
+}
 
 /* main */
 main > section:nth-child(even){
@@ -24,27 +27,37 @@ main > section:nth-child(odd){
     object-position: center;
 }
 
-.navbar-brand img{
-    filter: invert();
-    -webkit-filter: invert();
-    -moz-filter: invert();
-    height: 5rem;
-}
-
 
 /* my-classes */
 .big-font{
     font-family: 'Rye';
+}
+.invert-filter{
+    filter: invert();
+    -webkit-filter: invert();
+    -moz-filter: invert();
+}
+.no-wrap{
+    flex-wrap: nowrap;
+}
+.dotted{
+    border-bottom: 3px dotted;
+}
+.divider{
+    border-top: 2px solid;
+}
+.my-lh{
+    line-height: calc(1rem + .3vw);
 }
 .my-jumbo-p{
     top: 50%;
     left: 50%;
 }
 .my-jumbo-title{
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 .my-jumbo-text{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .my-btn-primary{
     background-color: red;
@@ -55,7 +68,7 @@ main > section:nth-child(odd){
 
 /* sheriff-line */
 .line{
-    border: 1px solid black;
+    border: 1px solid;
 }
 .sheriff-star{
     height: 24px;

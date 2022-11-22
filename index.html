@@ -26,7 +26,7 @@
         <nav class="navbar navbar-dark navbar-expand-lg">
             <div class="container-fluid justify-content-lg-center">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.png" alt="logo">
+                    <img class="invert-filter" src="./img/logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,8 +51,13 @@
         <section class="position-relative bg-black" id="jumbotron">
             <div class="row">
                 <div class="col">
-                    <img class="opacity-50 " src="./img/jumbo.jpg" alt="train jumbo">
-                    <div class="position-absolute translate-middle big-font text-white text-center my-jumbo-text">Dive into the past and travel to the most breathtaking destinations of the old west</div>
+                    <img class="opacity-50" src="./img/jumbo.jpg" alt="train jumbo">
+                    <div class="position-absolute translate-middle text-white text-center my-jumbo-p">
+                        <h1 class="big-font my-jumbo-title">Locomotive 4.4.0</h1>
+                        <p class="my-jumbo-text">
+                            Dive into the past and travel to the most breathtaking destinations of the old west
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -60,45 +65,93 @@
         <section id="box-office">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-sm-5 m-auto py-5">
+                    <div class="col-12 m-auto py-5">
                         <h1 class="text-center big-font pb-2">Take your next destination</h1>
-                        <div class="row align-items-center">
-                            <div class="col-5">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-5 col-sm-3 col-md-2">
                                 <div class="line"></div>
                             </div>
-                            <div class="col text-center">
+                            <div class="col-2 col-sm-1 text-center">
                                 <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
                                     <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
                                 </a>
                             </div>
-                            <div class="col-5">
+                            <div class="col-5 col-sm-3 col-md-2">
                                 <div class="line"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-8 m-auto">
-                        <div class="input-group input-group-lg mb-3">
-                            <input type="text" class="form-control" placeholder="Name" aria-label="name" aria-describedby="basic-addon1">
+                    <div class="col-12 col-sm-8 col-md-5 m-auto pb-5 ">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control fs-3" id="name" placeholder="Name" aria-label="name" aria-describedby="basic-addon1">
                         </div>
                             
-                        <div class="input-group input-group-lg mb-3">
-                            <input type="text" class="form-control" placeholder="Surname" aria-label="surname" aria-describedby="basic-addon2">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control fs-3" id="surname" placeholder="Surname" aria-label="surname" aria-describedby="basic-addon2">
                         </div>
 
-                        <div class="input-group input-group-lg mb-3">
-                            <input type="number" class="form-control" id="age" placeholder="Age" aria-label="age" aria-describedby="basic-addon3">
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control fs-3" id="age" placeholder="Age" aria-label="age" aria-describedby="basic-addon3">
                         </div>
                         
-                        <div class="input-group input-group-lg mb-3">
-                            <input type="number" class="form-control" id="distance" placeholder="Type the distance of the trip in Km" aria-label="distance" aria-describedby="basic-addon2">
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control fs-3" id="distance" placeholder="Type the distance of the trip in Km" aria-label="distance" aria-describedby="basic-addon2">
                         </div>
 
-                        <button type="button" class="btn my-btn-primary fs-4 w-100" id="sendBtn">Send Prenotation</button>
+                        <button type="button" class="btn my-btn-primary fs-3 w-100" id="sendBtn">Send Prenotation</button>
                     </div>
                 </div>
             </div>
         </section>
-        
+
+        <section id="price">
+            <div class="container-fluid text-white">
+                <div class="row">
+                    <div class="col-12 m-auto py-5">
+                        <h1 class="text-center big-font pb-2">Your Price</h1>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-5 col-sm-3 col-md-2">
+                                <div class="line"></div>
+                            </div>
+                            <div class="col-2 col-sm-1 text-center">
+                                <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                    <img class="sheriff-star invert-filter" src="./img/sheriff-badge.png" alt="*">
+                                </a>
+                            </div>
+                            <div class="col-5 col-sm-3 col-md-2">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 m-auto py-2">
+                        <h3 class="text-center big-font pb-2" id="client-data"></h3>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-5 m-auto pb-5 ">
+                        <div class="row no-wrap mb-4">
+                            <div class="w-auto my-lh fs-3">Initial Price</div>
+                            <div class="w-auto my-lh flex-grow-1 dotted"></div>
+                            <div class="w-auto my-lh text-end fs-3" id="initial-price">$0.00</div>
+                        </div>
+                        <div class="row no-wrap mb-4">
+                            <div class="w-auto my-lh fs-3">Minor Discount (17.5%)</div>
+                            <div class="w-auto my-lh flex-grow-1 dotted"></div>
+                            <div class="w-auto my-lh text-end text-danger fs-3" id="minor-discount">- $0.00</div>
+                        </div>
+                        <div class="row no-wrap mb-4">
+                            <div class="w-auto my-lh fs-3">Over 65 Discount (33.3%)</div>
+                            <div class="w-auto my-lh flex-grow-1 dotted"></div>
+                            <div class="w-auto my-lh text-end text-danger fs-3" id="over-discount">- $0.00</div>
+                        </div>
+                        <div class="row no-wrap mb-4 divider pt-3">
+                            <div class="w-auto my-lh fs-2">Final Price</div>
+                            <div class="w-auto my-lh flex-grow-1 dotted"></div>
+                            <div class="w-auto my-lh text-end fs-3" id="final-price">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- bootstrap 5.2.2 script -->
