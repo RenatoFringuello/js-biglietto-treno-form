@@ -1,0 +1,56 @@
+body{
+    overflow-x: hidden;
+    
+    font-family: 'Nixie One';
+    font-family: 'Smokum';
+}
+.big-font{
+    font-family: 'Rye';
+}
+
+main > section:nth-child(even){
+    background-color: antiquewhite;
+}
+
+#jumbotron img{
+    height: 44rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar-brand img{
+    filter: invert();
+    -webkit-filter: invert();
+    -moz-filter: invert();
+    height: 5rem;
+}
+
+
+/* my-classes */
+.my-jumbo-text{
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+}
+.my-btn-primary{
+    background-color: red;
+}
+
+/* sheriff-line */
+.line{
+    border: 1px solid black;
+}
+.sheriff-star{
+    height: 24px;
+}
+
+@media screen and (min-width : 768px) {
+    #jumbotron img{
+        height: auto;
+        width: 100%;
+    }
+
+    .my-jumbo-text{
+        font-size: 3rem;
+    }
+}
