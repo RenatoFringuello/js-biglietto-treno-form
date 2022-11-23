@@ -14,19 +14,28 @@ header img{
 }
 
 /* main */
-main > section:nth-child(even){
+main > section:nth-child(odd){
     background-color: antiquewhite;
 }
-main > section:nth-child(odd){
+main > section:nth-child(even){
     background-color: black;
+}
+main > section:not(#jumbotron){
+    padding:4rem 0 ;
 }
 
 #jumbotron img{
     height: 44rem;
-    object-fit: cover;
-    object-position: center;
 }
 
+#about img:not(.sheriff-star){
+    height: 400px;
+}
+
+#feedbacks .card img:not(.sheriff-star){
+    height: 300px;
+    object-position:top;
+}
 
 /* my-classes */
 .big-font{
@@ -36,6 +45,15 @@ main > section:nth-child(odd){
     filter: invert();
     -webkit-filter: invert();
     -moz-filter: invert();
+}
+.gray-filter{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+}
+.object-cover-center{
+    object-fit: cover;
+    object-position: center;
 }
 .no-wrap{
     flex-wrap: nowrap;

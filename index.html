@@ -48,10 +48,11 @@
           </nav>
     </header>
     <main>
+        <!-- jumbotron -->
         <section class="position-relative bg-black" id="jumbotron">
             <div class="row">
                 <div class="col">
-                    <img class="opacity-50" src="./img/jumbo.jpg" alt="train jumbo">
+                    <img class="opacity-50 object-cover-center" src="./img/jumbo.jpg" alt="train jumbo">
                     <div class="position-absolute translate-middle text-white text-center my-jumbo-p">
                         <h1 class="big-font my-jumbo-title">Locomotive 4.4.0</h1>
                         <p class="my-jumbo-text">
@@ -61,10 +62,79 @@
                 </div>
             </div>
         </section>
-
+        <!-- about -->
+        <section id="about">
+            <div class="container-fluid p-0 text-white">
+                <div class="row">
+                    <!-- title -->
+                    <div class="col-12 m-auto py-5">
+                        <h1 class="text-center big-font pb-2">Our Offers</h1>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-5 col-sm-3 col-md-2">
+                                <div class="line"></div>
+                            </div>
+                            <div class="col-2 col-sm-1 text-center">
+                                <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                    <img class="sheriff-star invert-filter" src="./img/sheriff-badge.png" alt="*">
+                                </a>
+                            </div>
+                            <div class="col-5 col-sm-3 col-md-2">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- about expirience -->
+                    <div class="col-12">
+                        <div class="row gx-md-5">
+                            <div class="col-12 col-md-6">
+                                <img class="w-100 gray-filter object-cover-center" src="./img/train-details.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="m-auto p-5">
+                                    <h2 class="big-font">Experience</h1>
+                                    <p class="fs-4">
+                                        Abandon yourself to the relaxation that an old west-style trip to the mountains can offer you
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- about Confort -->
+                    <div class="col-12">
+                        <div class="row flex-wrap-reverse flex-md-wrap gx-md-5">
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="m-auto p-5">
+                                    <h2 class="big-font">Confort</h1>
+                                    <p class="fs-4">Take a seat where the greatest nobles of the far west used to sit</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="w-100 gray-filter object-cover-center" src="./img/train-details2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- about Secure -->
+                    <div class="col-12">
+                        <div class="row gx-md-5">
+                            <div class="col-12 col-md-6">
+                                <img class="w-100 gray-filter object-cover-center" src="./img/train-details3.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="m-auto p-5">
+                                    <h2 class="big-font">Secure</h1>
+                                    <p class="fs-4">Don't worry, no teenager or scientist has ever tried to hijack one of our iron horse ... currently</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- box-office -->
         <section id="box-office">
             <div class="container-fluid">
                 <div class="row">
+                    <!-- title -->
                     <div class="col-12 m-auto py-5">
                         <h1 class="text-center big-font pb-2">Take your next destination</h1>
                         <div class="row justify-content-center align-items-center">
@@ -81,32 +151,30 @@
                             </div>
                         </div>
                     </div>
+                    <!-- form -->
                     <div class="col-12 col-sm-8 col-md-5 m-auto pb-5 ">
                         <div class="input-group mb-3">
                             <input type="text" class="form-control fs-3" id="name" placeholder="Name" aria-label="name" aria-describedby="basic-addon1">
                         </div>
-                            
                         <div class="input-group mb-3">
                             <input type="text" class="form-control fs-3" id="surname" placeholder="Surname" aria-label="surname" aria-describedby="basic-addon2">
                         </div>
-
                         <div class="input-group mb-3">
                             <input type="number" class="form-control fs-3" id="age" placeholder="Age" aria-label="age" aria-describedby="basic-addon3">
                         </div>
-                        
                         <div class="input-group mb-3">
                             <input type="number" class="form-control fs-3" id="distance" placeholder="Type the distance of the trip in Km" aria-label="distance" aria-describedby="basic-addon2">
                         </div>
-
                         <button type="button" class="btn my-btn-primary fs-3 w-100" id="sendBtn">Send Prenotation</button>
                     </div>
                 </div>
             </div>
         </section>
-
+        <!-- price result -->
         <section id="price">
             <div class="container-fluid text-white">
                 <div class="row">
+                    <!-- title -->
                     <div class="col-12 m-auto py-5">
                         <h1 class="text-center big-font pb-2">Your Price</h1>
                         <div class="row justify-content-center align-items-center">
@@ -123,9 +191,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- client data -->
                     <div class="col-12 m-auto py-2">
                         <h3 class="text-center big-font pb-2" id="client-data"></h3>
                     </div>
+                    <!-- prices -->
                     <div class="col-12 col-sm-8 col-md-5 m-auto pb-5 ">
                         <div class="row no-wrap mb-4">
                             <div class="w-auto my-lh fs-3">Initial Price</div>
@@ -151,7 +221,152 @@
                 </div>
             </div>
         </section>
-
+        <!-- they say -->
+        <section id="feedbacks">
+            <div class="container">
+                <div class="row">
+                    <!-- title -->
+                    <div class="col-12 m-auto py-5">
+                        <h1 class="text-center big-font pb-2">They said about us</h1>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-5 col-sm-3 col-md-2">
+                                <div class="line"></div>
+                            </div>
+                            <div class="col-2 col-sm-1 text-center">
+                                <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                    <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                </a>
+                            </div>
+                            <div class="col-5 col-sm-3 col-md-2">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- client feedbacks -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card p-3 mb-4">
+                            <img class="object-cover-center" src="./img/client1.webp" class="card-img-top">
+                            <div class="card-body px-0">
+                                <h2 class="big-font">That's Heavyyy!!!</h1>
+                                <p class="card-text fs-4">
+                                    I swear one of them was about to run me over once.<br>
+                                    I hope the company compensates me for the car.
+                                </p>
+                                <div class="ratings">
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card p-3 mb-4">
+                            <img class="object-cover-center" src="./img/client2.jpg" class="card-img-top">
+                            <div class="card-body px-0">
+                                <h2 class="big-font">Beautiful Places</h1>
+                                <p class="card-text fs-4">
+                                    The best part of the trip was when we crossed the Shonash ravine bridge.<br>
+                                    I don't know why a little boy kept giving it my name.
+                                </p>
+                                <div class="ratings">
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card p-3 mb-4">
+                            <img class="object-cover-center" src="./img/client3.jpg" class="card-img-top">
+                            <div class="card-body px-0">
+                                <h2 class="big-font">Admirable</h1>
+                                <p class="card-text fs-4">
+                                    Admirably admirable.
+                                </p>
+                            </div>
+                            <div class="ratings">
+                                <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                    <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                </a>
+                                <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                    <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                </a>
+                                <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                    <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card p-3 mb-4">
+                            <img class="object-cover-center" src="./img/client4.jpg" class="card-img-top">
+                            <div class="card-body px-0">
+                                <h2 class="big-font">F**K THIS COMPANY</h1>
+                                <p class="card-text fs-4">
+                                    They treated me like an object, for them I was never enough, I worked nightmarish shifts and my colleagues said I was slow.
+                                </p>
+                                <div class="ratings">
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card p-3 mb-4">
+                            <img class="object-cover-center" src="./img/client5.png" class="card-img-top">
+                            <div class="card-body px-0">
+                                <h2 class="big-font">Awesome!!</h1>
+                                <p class="card-text fs-4">
+                                    I got it up to 50mph, I heard Ted Daredevil Turbo got one up to 70mph after Cactus Joinction.
+                                </p>
+                                <div class="ratings">
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                    <a href="https://www.flaticon.com/free-icons/sheriff-badge" title="sheriff badge icons">
+                                        <img class="sheriff-star" src="./img/sheriff-badge.png" alt="*">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- bootstrap 5.2.2 script -->
