@@ -14,7 +14,8 @@ header img{
 }
 
 /* main */
-main > section:nth-child(odd){
+main > section:nth-child(odd),
+footer{
     background-color: antiquewhite;
 }
 main > section:nth-child(even){
