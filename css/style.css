@@ -65,6 +65,9 @@ main > section:not(#jumbotron){
 .divider{
     border-top: 2px solid;
 }
+.my-active:hover{
+    color:#dc3545 !important;
+}
 .my-lh{
     line-height: calc(1rem + .3vw);
 }
