@@ -34,7 +34,7 @@ main > section:not(#jumbotron){
 }
 
 #feedbacks .card img:not(.sheriff-star){
-    height: 300px;
+    height: 200px;
     object-position:top;
 }
 
